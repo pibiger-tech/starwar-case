@@ -1,0 +1,3 @@
+/etc/systemd/system/pi-case-fan.service
+systemctl enable pi-case-fan.service
+systemctl start pi-case-fan.service
