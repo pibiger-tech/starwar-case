@@ -1,0 +1,13 @@
+[Unit]
+#service description
+Description=pi case smart fan
+[Service]
+#simple service
+Type=simple
+#running user and user group
+Restart=always
+ExecStart=/usr/bin/python /usr/bin/pi-fan.py &
+#ExecStart=/usr/bin/python /home/pi/restart.py &
+
+[Install]
+WantedBy=multi-user.target
